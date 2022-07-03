@@ -130,7 +130,7 @@ xilinx.com:ip:mipi_csi2_rx_subsystem:5.1\
 xilinx.com:ip:v_demosaic:1.1\
 xilinx.com:ip:v_gamma_lut:1.1\
 xilinx.com:ip:v_tpg:8.2\
-xilinx.com:user:vfp:1.0\
+xilinx.com:user:vfp:2.0\
 xilinx.com:ip:axi_intc:4.1\
 xilinx.com:ip:zynq_ultra_ps_e:3.4\
 xilinx.com:ip:v_axi4s_vid_out:4.0\
@@ -1456,7 +1456,7 @@ proc create_hier_cell_RX_VIDEO { parentCell nameHier } {
  ] $v_tpg_0
 
   # Create instance: vfp_0, and set properties
-  set vfp_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:vfp:1.0 vfp_0 ]
+  set vfp_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:vfp:2.0 vfp_0 ]
   set_property -dict [ list \
    CONFIG.FRAME_HEIGHT {1080} \
    CONFIG.FRAME_WIDTH {1920} \
